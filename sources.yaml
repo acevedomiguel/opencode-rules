@@ -1,0 +1,70 @@
+schema_version: 1
+reviewed_at: "2026-11-22"
+
+sources:
+  awesome-opencode:
+    repository: https://github.com/awesome-opencode/awesome-opencode
+    revision: c125252fe11f2021c58545e705d4f69d5c6092f0
+    used_for: resource discovery
+
+  superpowers:
+    repository: https://github.com/obra/superpowers
+    revision: c62ffea8267a70de07583e153544d355b6748a56
+    release: v7.0.2
+    license: MIT
+    used_for: engineering workflow and verification
+
+  boffin:
+    repository: https://github.com/MicSm/boffin
+    revision: e29fc3866797d17c1b17dd4a070f571b1f2c6aed
+    release: v1.0.1
+    license: MIT
+    used_for: scoped architecture and review guidance
+
+  go-agent-skills:
+    repository: https://github.com/eduardo-sl/go-agent-skills
+    revision: e25b517bbd0c11db35f75a83a14f18848c1abdb0
+    license: MIT
+    used_for: Go conventions
+
+  go-official:
+    repository: https://github.com/golang/go
+    revision: 42452e65565c72df6b2339a2b4e449f0ba8f96e3
+    documents:
+      - https://go.dev/doc/effective_go
+      - https://go.dev/wiki/CodeReviewComments
+    used_for: authoritative Go practices
+
+  github-awesome-copilot:
+    repository: https://github.com/github/awesome-copilot
+    revision: f10fdb8b2660ce85c98f220b2f1ca24653768a5c
+    source_path: skills/github-actions-hardening
+    license: MIT
+    used_for: GitHub Actions threat modeling
+
+  github-docs:
+    repository: https://github.com/github/docs
+    revision: d7487f5debb5a5a2a6e65e6f9fa539266f5f8db6
+    document: https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions
+    used_for: authoritative GitHub Actions security
+
+  homebrew-official:
+    repository: https://github.com/Homebrew/brew
+    revision: 54273124a27f3b95162a90600ce641f0826f717e
+    documents:
+      - https://docs.brew.sh/Formula-Cookbook
+      - https://docs.brew.sh/Cask-Cookbook
+    used_for: authoritative formula and cask practices
+
+  goreleaser:
+    repository: https://github.com/goreleaser/goreleaser
+    revision: 2daa40a4d60bdc08991f764a996bd1ad75e34496
+    document: https://goreleaser.com/customization/publish/homebrew_casks/
+    used_for: current GoReleaser Homebrew cask support
+
+  homebrew-dev-skill:
+    repository: https://github.com/trtmn/agent-skills
+    revision: 5e84ff63272d89587e5897ab571d78cd52fa6d27
+    source_path: homebrew-dev
+    license: Unlicense
+    used_for: formula and cask packaging workflow
