@@ -4,6 +4,13 @@ Reusable engineering conventions for OpenCode projects. This repository owns
 common guidance; each consuming repository keeps only product-specific contracts,
 commands, and skills locally.
 
+## Source catalog
+
+[Awesome OpenCode](https://github.com/awesome-opencode/awesome-opencode) is the
+discovery source of truth for OpenCode resources. The exact catalog revision used
+for this repository is recorded in `sources.yaml`; domain-specific guidance also
+points to its authoritative upstream documentation there.
+
 ## Use a tagged release
 
 Add the documents relevant to the project in `opencode.jsonc`:
@@ -12,10 +19,10 @@ Add the documents relevant to the project in `opencode.jsonc`:
 {
   "$schema": "https://opencode.ai/config.json",
   "instructions": [
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.0/engineering.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.0/go-conventions.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.0/github-actions.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.0/homebrew.md"
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.1/engineering.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.1/go-conventions.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.1/github-actions.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.1/homebrew.md"
   ]
 }
 ```
@@ -51,6 +58,7 @@ publish a new tag, and intentionally upgrade each consumer.
 ## Version policy
 
 - `v1.0.0` is the initial immutable release.
+- `v1.0.1` adds the explicit Awesome OpenCode source-catalog link.
 - Never move or reuse a published tag. Make follow-up changes on `main`, review
   them, and publish a new version.
 - Use a patch tag for corrections that do not change expectations, a minor tag
