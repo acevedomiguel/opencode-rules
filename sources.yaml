@@ -27,13 +27,20 @@ sources:
     license: MIT
     used_for: Go conventions
 
-  go-official:
-    repository: https://github.com/golang/go
-    revision: 42452e65565c72df6b2339a2b4e449f0ba8f96e3
-    documents:
-      - https://go.dev/doc/effective_go
-      - https://go.dev/wiki/CodeReviewComments
-    used_for: authoritative Go practices
+  effective-go:
+    repository: https://github.com/golang/website
+    revision: 0eef789c9f9a7cc074eab1b3fb2d96baea282546
+    source_path: _content/doc/effective_go.html
+    document: https://go.dev/doc/effective_go
+    used_for: authoritative Effective Go guidance
+
+  code-review-comments:
+    repository: https://github.com/golang/wiki
+    revision: 995ac8a6f5b7a79d5a211c47cc462bdbed5ff209
+    source_path: CodeReviewComments.md
+    upstream: https://go.googlesource.com/wiki
+    document: https://go.dev/wiki/CodeReviewComments
+    used_for: authoritative Go review conventions
 
   github-awesome-copilot:
     repository: https://github.com/github/awesome-copilot

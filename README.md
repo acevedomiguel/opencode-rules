@@ -19,10 +19,10 @@ Add the documents relevant to the project in `opencode.jsonc`:
 {
   "$schema": "https://opencode.ai/config.json",
   "instructions": [
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.1/engineering.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.1/go-conventions.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.1/github-actions.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.1/homebrew.md"
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.2/engineering.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.2/go-conventions.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.2/github-actions.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.2/homebrew.md"
   ]
 }
 ```
@@ -59,6 +59,7 @@ publish a new tag, and intentionally upgrade each consumer.
 
 - `v1.0.0` is the initial immutable release.
 - `v1.0.1` adds the explicit Awesome OpenCode source-catalog link.
+- `v1.0.2` corrects the independent Go documentation source pins.
 - Never move or reuse a published tag. Make follow-up changes on `main`, review
   them, and publish a new version.
 - Use a patch tag for corrections that do not change expectations, a minor tag
