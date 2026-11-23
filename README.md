@@ -19,17 +19,18 @@ Add the documents relevant to the project in `opencode.jsonc`:
 {
   "$schema": "https://opencode.ai/config.json",
   "instructions": [
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.2/engineering.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.2/go-conventions.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.2/github-actions.md",
-    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.0.2/homebrew.md"
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.1.0/engineering.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.1.0/ui.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.1.0/go-conventions.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.1.0/github-actions.md",
+    "https://raw.githubusercontent.com/acevedomiguel/opencode-rules/v1.1.0/homebrew.md"
   ]
 }
 ```
 
-Use only the documents that apply. For example, a non-Go project does not need
-`go-conventions.md`; a project without Homebrew distribution does not need
-`homebrew.md`.
+Use only the documents that apply. For example, a project without a web UI does
+not need `ui.md`, a non-Go project does not need `go-conventions.md`, and a
+project without Homebrew distribution does not need `homebrew.md`.
 
 OpenCode loads remote instructions when configuration loads. Tagged URLs make
 updates explicit: consumers stay on their selected release until their config
@@ -40,6 +41,7 @@ changes.
 | Document | Scope |
 | --- | --- |
 | `engineering.md` | Scoped design, TDD, systematic debugging, independent review, verification, safe Git behavior, and general security |
+| `ui.md` | Light/dark/system themes, desktop-first responsive layouts, visual hierarchy, accessibility, interaction states, and rendered UI verification |
 | `go-conventions.md` | Idiomatic Go, errors, contexts, interfaces, concurrency, tests, dependencies, CI, and reproducible releases |
 | `github-actions.md` | Workflow trust boundaries, token and secret scope, injection prevention, dependency locking, and validation |
 | `homebrew.md` | Formula/cask decisions, package integrity, taps, GoReleaser casks, audits, signing, and notarization |
@@ -60,6 +62,7 @@ publish a new tag, and intentionally upgrade each consumer.
 - `v1.0.0` is the initial immutable release.
 - `v1.0.1` adds the explicit Awesome OpenCode source-catalog link.
 - `v1.0.2` corrects the independent Go documentation source pins.
+- `v1.1.0` adds reusable user interface conventions.
 - Never move or reuse a published tag. Make follow-up changes on `main`, review
   them, and publish a new version.
 - Use a patch tag for corrections that do not change expectations, a minor tag
