@@ -1,11 +1,34 @@
 schema_version: 1
-reviewed_at: "2026-11-22"
+reviewed_at: "2026-11-23"
 
 sources:
   awesome-opencode:
     repository: https://github.com/awesome-opencode/awesome-opencode
     revision: c125252fe11f2021c58545e705d4f69d5c6092f0
     used_for: resource discovery
+
+  typeui:
+    repository: https://github.com/bergside/typeui
+    revision: efc5f21dff38692e4eaffc304fed465d7cb531e8
+    source_path: skills/fundamentals
+    license: MIT
+    used_for: UI hierarchy, responsive design, typography, interaction, and accessibility
+
+  uizze:
+    repository: https://github.com/uizze/uizze
+    revision: fc401e9e654cbafe427b0c98142fc8bccd0c4e7e
+    source_path: skills/anti-ui-slop
+    license: Apache-2.0
+    used_for: product-specific UI, complete interaction states, and rendered UI verification
+
+  w3c-wcag:
+    repository: https://github.com/w3c/wcag
+    revision: 2766fae25fc8286f60181d655115cba054b797e1
+    documents:
+      - https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
+      - https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html
+      - https://www.w3.org/WAI/WCAG22/Understanding/reflow.html
+    used_for: authoritative WCAG 2.2 contrast and reflow requirements
 
   superpowers:
     repository: https://github.com/obra/superpowers
